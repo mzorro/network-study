@@ -19,13 +19,13 @@ for s in socks:
 for msg in messages:
     # send msg to server from different sockets
     for s in socks:
-        print 'Sending:',msg,'with:',s.getpeername()
+        print 'Sending:',repr(msg),'To:',s.getpeername()
         s.send(msg)
 
     # read response on each sockets
     for s in socks:
         data = s.recv(1024)
-        print s.getpeername(),'receved:',data
+        print 'Receved:',repr(data),'From',s.getpeername()
         if not data:
-            print "closing socket ",s.getpeername()
+            print "Closing socket:",s.getsockname()
             s.close()
