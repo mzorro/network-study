@@ -18,4 +18,4 @@ if __name__ == '__main__':
         sys.exit(2)
     port = int(sys.argv[2]) if len(sys.argv) > 2 else launcelot.PORT
     for success in client(sys.argv[1], port):
-        print success
+        pass

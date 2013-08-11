@@ -1,0 +1,16 @@
+cycle: 00 | average: 0.049708s | duration: 18.01s | conn_count: 240 | conn_count_ps: 13
+cycle: 01 | average: 0.116352s | duration: 17.96s | conn_count: 250 | conn_count_ps: 13
+cycle: 02 | average: 0.102770s | duration: 18.00s | conn_count: 417 | conn_count_ps: 23
+cycle: 03 | average: 0.066033s | duration: 18.04s | conn_count: 959 | conn_count_ps: 53
+cycle: 04 | average: 0.073895s | duration: 18.01s | conn_count: 1252 | conn_count_ps: 69
+cycle: 05 | average: 0.079326s | duration: 18.05s | conn_count: 1728 | conn_count_ps: 95
+cycle: 06 | average: 0.090494s | duration: 18.08s | conn_count: 1999 | conn_count_ps: 110
+cycle: 07 | average: 0.100063s | duration: 18.07s | conn_count: 2274 | conn_count_ps: 125
+cycle: 08 | average: 0.123898s | duration: 18.09s | conn_count: 2411 | conn_count_ps: 133
+cycle: 09 | average: 0.150394s | duration: 18.01s | conn_count: 3045 | conn_count_ps: 169
+cycle: 10 | average: 0.245848s | duration: 18.06s | conn_count: 3299 | conn_count_ps: 182
+cycle: 11 | average: 0.356774s | duration: 18.06s | conn_count: 3755 | conn_count_ps: 207
+to run those in matlab...
+client_count = [1, 2, 3, 5, 7, 10, 13, 16, 20, 30, 50, 80];
+conn_count_ps = [13, 13, 23, 53, 69, 95, 110, 125, 133, 169, 182, 207];
+plot(client_count, conn_count_ps);

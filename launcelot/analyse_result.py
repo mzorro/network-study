@@ -1,5 +1,5 @@
 from BeautifulSoup import BeautifulSoup
-result_file_name = 'twisted_server_result.xml'
+result_file_name = 'pystdlib_server_result.xml'
 with open(result_file_name) as bench:
     soup = BeautifulSoup(bench.read())
     analyse_result_file = result_file_name.split('.')[0] + '.txt'
