@@ -2,7 +2,6 @@
 from twisted.internet import protocol, reactor, defer
 from twisted.protocols import basic
 
-# 好吧。。还有什么好说的
 class FingerProtocol(basic.LineReceiver):
     def lineReceived(self, user):
         d = self.factory.getUser(user)
